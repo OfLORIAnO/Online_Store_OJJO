@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>OJJO — официальный магазин</title>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet">
+  <!-- Fantasy -->
+  <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+   <div class="site-container">
+      <main class="main main-catalog">
+         <div class="main__container container">
+            <header class="header" id="header" data-scroll>
+  <div class="header__container">
+
+    <nav class="header__nav nav" title="right">
+      <ul class="nav__list nav__left list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">Дизайнерам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Вакансии</a></li>
+        <li class="nav__item"><a href="contact.html" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html" class="header__logo">
+      <img src="img/main/logo.png" alt="">
+    </a>
+
+    <nav class="header__nav nav" title="right">
+      <ul class="nav__list nav__right list-reset">
+        <li class="nav__item"><a href="#" class="nav__link nav__search">Поиск</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Вход/Регистрация</a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><i class="fa-solid fa-user"></i></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><i class="fa-solid fa-heart"></i></a></li>
+      </ul>
+    </nav>
+
+    <button onclick="burger()" class="burger" aria-label="Открыть меню" aria-expanded="false" id="burgerButton">
+      <span class="burger__line btn-reset"></span>
+    </button>
+  </div>
+
+</header>
+         </div>
+      </main>
+      <div class="catalog__path path">
+         <a href="index.html" class="path__link">
+            <span class="path__item">Главная</span>
+         </a> /
+         <span class="path__item">
+            Контакты
+         </span>
+      </div>
+   </div>
+   <div class="burger-menu">
+      <div class="burger-menu__container container">
+         <div class="burger-menu__body">
+            <div class="burger-menu__content">
+               <ul class="burger-menu__list list-reset">
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Дизайнерам</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Вакансии</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="contact.html">Контакты</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Вход/Регистрация</a></li>
+               </ul>
+               <hr>
+               <div class="burger-menu__nav">
+                  <div class="burger-menu__font">
+                     <a href="#"><i class="fa-solid fa-user"></i></a>
+                  </div>
+                  <div class="burger-menu__font">
+                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </div>
+               </div>
+               <hr>
+               <div class="burger-menu__contacts">
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/YouTube.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/vk.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/Facebook.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/telegram.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/e.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__body">
+      <div class="footer__items">
+        <div class="footer__title">Полезные ссылки</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Доставка</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Оплата </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">оплата</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_cont">
+              <img src="img/mailing/visa.png" alt="" class="footer__img">
+              <img src="img/mailing/mastercard.png"" alt="" class="footer__img">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">контакты</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_tel">8 (812) 234-56-55</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_tel">8 (812) 234-56-55 </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_mail">ojjo@ojjo.ru</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">социальные сети</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </a>
+          </li>
+          <li class="footer__item footer__item_cont">
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/01.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/02.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/03.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/04.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/05.png" alt="" class="footer__img"></a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="https://kit.fontawesome.com/530ce1ded4.js" crossorigin="anonymous"></script>
+<script>
+
+   function burger() {
+      document.querySelector('.burger-menu').classList.toggle('hide')
+      document.getElementById('burgerButton').classList.toggle('burger--active');
+      document.querySelector('.page__body').classList.toggle('scrollEnable')
+   };
+</script>
+
+</html>

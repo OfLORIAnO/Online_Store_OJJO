@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>OJJO — официальный магазин</title>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet">
+  <!-- Fantasy -->
+  <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body" id="Enable">
+  <div class="site-container">
+    <main class="main">
+      <div class="main__container container">
+        <header class="header" id="header" data-scroll>
+  <div class="header__container">
+
+    <nav class="header__nav nav" title="right">
+      <ul class="nav__list nav__left list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">Дизайнерам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Вакансии</a></li>
+        <li class="nav__item"><a href="contact.html" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html" class="header__logo">
+      <img src="img/main/logo.png" alt="">
+    </a>
+
+    <nav class="header__nav nav" title="right">
+      <ul class="nav__list nav__right list-reset">
+        <li class="nav__item"><a href="#" class="nav__link nav__search">Поиск</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Вход/Регистрация</a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><i class="fa-solid fa-user"></i></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><i class="fa-solid fa-heart"></i></a></li>
+      </ul>
+    </nav>
+
+    <button onclick="burger()" class="burger" aria-label="Открыть меню" aria-expanded="false" id="burgerButton">
+      <span class="burger__line btn-reset"></span>
+    </button>
+  </div>
+
+</header>
+        <div class="main__body">
+          <div class="main__title">Долго, дорого, богато!</div>
+          <div class="main__button">
+            <a href="catalog.html" class="main__link">
+              каталог изделий
+            </a>
+          </div>
+        </div>
+        <div class="main__hr">
+        </div>
+        <div class="main__sponsors sponsors-main">
+          <div class="sponsors-main__item">
+            <a href="" class="sponsors-main__link">
+              <img src="img/main/sponsors/01.png" alt="" class="sponsors-main__img">
+            </a>
+          </div>
+          <div class="sponsors-main__item">
+            <a href="" class="sponsors-main__link">
+              <img src="img/main/sponsors/01.png" alt="" class="sponsors-main__img">
+            </a>
+          </div>
+          <div class="sponsors-main__item">
+            <a href="" class="sponsors-main__link">
+              <img src="img/main/sponsors/01.png" alt="" class="sponsors-main__img">
+            </a>
+          </div>
+          <div class="sponsors-main__item">
+            <a href="" class="sponsors-main__link">
+              <img src="img/main/sponsors/01.png" alt="" class="sponsors-main__img">
+            </a>
+          </div>
+          <div class="sponsors-main__item">
+            <a href="" class="sponsors-main__link">
+              <img src="img/main/sponsors/01.png" alt="" class="sponsors-main__img">
+            </a>
+          </div>
+          <div class="sponsors-main__item">
+            <a href="" class="sponsors-main__link">
+              <img src="img/main/sponsors/01.png" alt="" class="sponsors-main__img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="events">
+   <div class="events__container container">
+      <div class="events__body">
+         <div class="events__title title">
+            К мероприятиям
+         </div>
+         <div class="events__subtitle subtitle">
+            Настоящая красота здесь!
+         </div>
+         <div class="tabs" data-tabs="tab">
+            <ul class="tabs__nav list-reset">
+               <li class="tabs__nav-item">
+                  <div class="tabs__nav-background"></div>
+                  <button class="tabs__nav-btn nav__nav-btn--active" type="button">
+                     Свадьба
+                  </button>
+               </li>
+               <li class="tabs__nav-item">
+                  <div class="tabs__nav-background"></div>
+                  <button class="tabs__nav-btn" type="button">
+                     МУЖУ
+                  </button>
+               <li class="tabs__nav-item">
+                  <div class="tabs__nav-background"></div>
+                  <button class="tabs__nav-btn" type="button">
+                     жене
+                  </button>
+               <li class="tabs__nav-item">
+                  <div class="tabs__nav-background"></div>
+                  <button class="tabs__nav-btn" type="button">
+                     партнеру
+                  </button>
+               <li class="tabs__nav-item">
+                  <div class="tabs__nav-background"></div>
+                  <button class="tabs__nav-btn" type="button">
+                     коллекции
+                  </button>
+               </li>
+               <li class="tabs__nav-item">
+                  <div class="tabs__nav-background"></div>
+                  <button class="tabs__nav-btn" type="button">
+                     редкость
+                  </button>
+               </li>
+            </ul>
+            <div class="tabs__content">
+               <div class="tabs__panel panel-tabs">
+                  <div class="panel-tabs__container">
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/01.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">Кольца</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">серьги</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/03.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">подвески</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/04.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">запонки</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/05.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">браслеты</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/06.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">часы</h3>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="tabs__panel panel-tabs">
+                  <div class="panel-tabs__container">
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/06.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">часы</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/05.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">браслеты</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/04.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">запонки</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/03.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">подвески</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">серьги</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/01.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">Кольца</h3>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="tabs__panel panel-tabs">
+                  <div class="panel-tabs__container">
+
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">серьги</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/04.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">запонки</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/03.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">подвески</h3>
+                        </div>
+                     </a>
+
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/05.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">браслеты</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/01.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">Кольца</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/06.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">часы</h3>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="tabs__panel panel-tabs">
+                  <div class="panel-tabs__container">
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/01.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">Кольца</h3>
+                        </div>
+                     </a>
+
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/03.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">подвески</h3>
+                        </div>
+                     </a>
+
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/05.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">браслеты</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">серьги</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/06.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">часы</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/04.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">запонки</h3>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="tabs__panel panel-tabs">
+                  <div class="panel-tabs__container">
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/05.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">браслеты</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/01.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">Кольца</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/03.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">подвески</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/04.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">запонки</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">серьги</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/06.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">часы</h3>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="tabs__panel panel-tabs">
+                  <div class="panel-tabs__container">
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/01.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">Кольца</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/05.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">браслеты</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/03.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">подвески</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/04.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">запонки</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">серьги</h3>
+                        </div>
+                     </a>
+                     <a href="#" class="panel-tabs__link">
+                        <div class="panel-tabs__item">
+                           <div class="panel-tabs__img">
+                              <img loading="lazy" src="img/events/06.jpg" alt="">
+                           </div>
+                           <h3 class="panel-tabs__title">часы</h3>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+    <div class="visit">
+   <div class="visit__container container">
+      <div class="visit__body">
+         <div class="visit__title title">Не знаете, что выбрать?</div>
+         <div class="visit__subtitle subtitle">Посетите наши салоны в Москве</div>
+         <div class="visit__text text">
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque egestas quam
+               pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim.
+               Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra
+               lorem sem purus nisi libero viverra ipsum.
+            </p>
+         </div>
+         <div class="visit__button">
+            <a href="#" class="visit__link">наши салоны</a>
+         </div>
+      </div>
+   </div>
+</div>
+    <div class="advice">
+   <div class="advice__container container">
+      <div class="advice__title title">Полезные статьи</div>
+      <div class="advice__subtitle subtitle">Лучшие советы по подбору дорогих подарков</div>
+      <div class="advice__body">
+         <div class="advice__items">
+            <div class="advice__item">
+               <div class="advice__cont">
+                  <a href="" class="advice__link">
+                     <img src="img/advice/01.jpg" alt="" class="advice__img">
+                     <div class="advice__text">
+                        Как выбрать
+                        часы для своей
+                        будущей жены
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="advice__item">
+               <div class="advice__cont">
+                  <a href="" class="advice__link">
+                     <img src="img/advice/02.jpg" alt="" class="advice__img">
+                     <div class="advice__text">
+                        Запонки для мужа:
+                        7 ключевых правил
+                        покупки аксессуара
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="advice__item">
+               <div class="advice__cont">
+                  <a href="" class="advice__link">
+                     <img src="img/advice/03.jpg" alt="" class="advice__img">
+                     <div class="advice__text">
+                        Как выбрать
+                        обручальные кольца
+                        молодоженам
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="advice__button">
+         <a href="#">
+            читать наш блог
+         </a>
+      </div>
+   </div>
+</div>
+    <div class="contcts">
+   <div class="contcts__container container">
+      <div class="contcts__contact">#ojjo_jewerly</div>
+      <div class="contcts__subtitle subtitle">
+         Мы в социальных сетях
+      </div>
+      <div class="contcts__body">
+         <div class="contcts__item i1">
+            <video id="my-video" class="video-js vjs-theme-fantasy" controls preload="auto"  data-setup="{}">
+               <source src="video/ring.mp4" type="video/mp4" />
+               <source src="video/ring.mp4" type="video/webm" />
+               <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a
+                  web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+               </p>
+            </video>
+         </div>
+         <div class="contcts__item i2">
+            <img src="img/contcts/01.jpg" alt="" class="contcts__img">
+         </div>
+         <div class="contcts__item i3">
+            <img src="img/contcts/02.jpg" alt="" class="contcts__img">
+         </div>
+         <div class="contcts__item i4">
+            <img src="img/contcts/03.jpg" alt="" class="contcts__img">
+         </div>
+         <div class="contcts__item i5">
+            <img src="img/contcts/04.jpg" alt="" class="contcts__img">
+         </div>
+         <div class="contcts__item i6">
+            <video id="my-video" class="video-js vjs-theme-fantasy" controls preload="auto" data-setup="{}">
+               <source src="video/ring.mp4" type="video/mp4" />
+               <source src="video/ring.mp4" type="video/webm" />
+               <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a
+                  web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+               </p>
+            </video>
+         </div>
+      </div>
+   </div>
+</div>
+    <div class="mailing">
+   <div class="mailing__container container">
+      <div class="mailing__title title">Полезные советы и персональный предложения</div>
+      <div class="mailing__subtitle subtitle">Эксклюзивная рассылка</div>
+      <div class="mailing__body">
+         <div class="mailing__list">
+            <ul class="mailing__ul list-reset">
+               <li class="mailing__item">Личный менеджер</li>
+               <li class="mailing__item">Доставка и оформление</li>
+               <li class="mailing__item">Индивидуальный дизайн</li>
+            </ul>
+         </div>
+         <div class="mailing__email">
+            <form action="#" class="mailing__form">
+               <input type="email" name="" id="" placeholder="Ваш e-mail" class="mailing__i1">
+               <input type="submit" class="mailing__i2" value="отправить">
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+    <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__body">
+      <div class="footer__items">
+        <div class="footer__title">Полезные ссылки</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Доставка</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Оплата </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">оплата</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_cont">
+              <img src="img/mailing/visa.png" alt="" class="footer__img">
+              <img src="img/mailing/mastercard.png"" alt="" class="footer__img">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">контакты</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_tel">8 (812) 234-56-55</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_tel">8 (812) 234-56-55 </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_mail">ojjo@ojjo.ru</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">социальные сети</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </a>
+          </li>
+          <li class="footer__item footer__item_cont">
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/01.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/02.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/03.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/04.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/05.png" alt="" class="footer__img"></a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <div class="burger-menu">
+    <div class="burger-menu__container container">
+      <div class="burger-menu__body">
+        <div class="burger-menu__content">
+          <ul class="burger-menu__list list-reset">
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#">Дизайнерам</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#">Вакансии</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link" href="contact.html">Контакты</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#">Вход/Регистрация</a></li>
+          </ul>
+          <hr>
+          <div class="burger-menu__nav">
+            <div class="burger-menu__font">
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="burger-menu__font">
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+            </div>
+          </div>
+          <hr>
+          <div class="burger-menu__contacts">
+            <div class="burger-menu__contact-item">
+              <a href="" class="burger-menu__links">
+                <img src="img/contacts/YouTube.png" alt="">
+              </a>
+            </div>
+            <div class="burger-menu__contact-item">
+              <a href="" class="burger-menu__links">
+                <img src="img/contacts/vk.png" alt="">
+              </a>
+            </div>
+            <div class="burger-menu__contact-item">
+              <a href="" class="burger-menu__links">
+                <img src="img/contacts/Facebook.png" alt="">
+              </a>
+            </div>
+            <div class="burger-menu__contact-item">
+              <a href="" class="burger-menu__links">
+                <img src="img/contacts/telegram.png" alt="">
+              </a>
+            </div>
+            <div class="burger-menu__contact-item">
+              <a href="" class="burger-menu__links">
+                <img src="img/contacts/e.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function burger() {
+    document.querySelector('.burger-menu').classList.toggle('hide')
+    document.getElementById('burgerButton').classList.toggle('burger--active');
+    document.querySelector('.page__body').classList.toggle('scrollEnable')
+  }
+</script>
+<script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+<script src="https://kit.fontawesome.com/530ce1ded4.js" crossorigin="anonymous"></script>
+</html>

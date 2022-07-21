@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>OJJO — официальный магазин</title>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet">
+  <!-- Fantasy -->
+  <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+   <div class="site-container">
+      <main class="main main-catalog">
+         <div class="main__container container">
+            <header class="header" id="header" data-scroll>
+  <div class="header__container">
+
+    <nav class="header__nav nav" title="right">
+      <ul class="nav__list nav__left list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">Дизайнерам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Вакансии</a></li>
+        <li class="nav__item"><a href="contact.html" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html" class="header__logo">
+      <img src="img/main/logo.png" alt="">
+    </a>
+
+    <nav class="header__nav nav" title="right">
+      <ul class="nav__list nav__right list-reset">
+        <li class="nav__item"><a href="#" class="nav__link nav__search">Поиск</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Вход/Регистрация</a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><i class="fa-solid fa-user"></i></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><i class="fa-solid fa-heart"></i></a></li>
+      </ul>
+    </nav>
+
+    <button onclick="burger()" class="burger" aria-label="Открыть меню" aria-expanded="false" id="burgerButton">
+      <span class="burger__line btn-reset"></span>
+    </button>
+  </div>
+
+</header>
+
+         </div>
+      </main>
+      <div class="catalog__path path">
+         <a href="index.html" class="path__link">
+            <span class="path__item">Главная</span>
+         </a> /
+         <span class="path__item">
+            Каталог
+         </span>
+      </div>
+   </div>
+   <div class="catalog">
+   <div class="catalog__container container">
+      <div class="catalog__filter catalog__body">
+         <div class="filter">
+            <button class="filter__button">Брэнд</button>
+            <ul class="filter__group list-reset">
+               <li class="filter__option" data-value="lorem1">Lorem1</li>
+               <li class="filter__option" data-value="lorem2">Lorem2</li>
+               <li class="filter__option" data-value="lorem3">Lorem3</li>
+            </ul>
+            <input type="text" class="filter__input" data-category>
+         </div>
+         <div class="filter">
+            <button class="filter__button">Цена</button>
+            <ul class="filter__group list-reset">
+               <li class="filter__option" data-value="lorem1">1,000-20,000 руб.</li>
+            </ul>
+            <input type="text" class="filter__input" data-category>
+         </div>
+         <div class="filter">
+            <button class="filter__button">Для кого</button>
+            <ul class="filter__group list-reset">
+               <li class="filter__option" data-value="lorem1">Девушки</li>
+               <li class="filter__option" data-value="lorem2">Мужчины</li>
+            </ul>
+            <input type="text" class="filter__input" data-category>
+         </div>
+         <div class="filter">
+            <button class="filter__button">Коллекция </button>
+            <ul class="filter__group list-reset">
+               <li class="filter__option" data-value="lorem1">Lorem1</li>
+               <li class="filter__option" data-value="lorem2">Lorem2</li>
+               <li class="filter__option" data-value="lorem3">Lorem3</li>
+            </ul>
+            <input type="text" class="filter__input" data-category>
+         </div>
+         <div class="filter">
+            <button class="filter__button">Сезон</button>
+            <ul class="filter__group list-reset">
+               <li class="filter__option" data-value="lorem1">Лето</li>
+               <li class="filter__option" data-value="lorem2">Осень</li>
+               <li class="filter__option" data-value="lorem3">Зима</li>
+               <li class="filter__option" data-value="lorem3">Лето</li>
+            </ul>
+            <input type="text" class="filter__input" data-category>
+         </div>
+         <div class="filter">
+            <button class="filter__button">Событие</button>
+            <ul class="filter__group list-reset">
+               <li class="filter__option" data-value="lorem1">Подарок</li>
+               <li class="filter__option" data-value="lorem2">Свадьба</li>
+            </ul>
+            <input type="text" class="filter__input" data-category>
+         </div>
+         <button class="filter__btn_search btn-reset">Поиск</button>
+      </div>
+
+   </div>
+
+</div>
+   <div class="card-page">
+   <div class="card-page__container container">
+      <button class="filter__button_btn btn-reset">
+         <i class="fa-solid fa-filter"></i>
+      </button>
+      <div class="catalog__content">
+         <div class="catalog__card card">
+            <div class="card__body">
+               <a href="product.html" class="card__link">
+                  <div class="card__img">
+                     <img src="img/card/01.jpg" alt="">
+                  </div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__tag">Подвеска</div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__title">Dolce & Gabanna</div>
+               </a>
+               <a href="product.html" class="card__price">175 000 ₽</a>
+            </div>
+         </div>
+         <div class="catalog__card card">
+            <div class="card__body">
+               <a href="product.html" class="card__link">
+                  <div class="card__img">
+                     <img src="img/card/01.jpg" alt="">
+                  </div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__tag">Подвеска</div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__title">Dolce & Gabanna</div>
+               </a>
+               <a href="product.html" class="card__price">175 000 ₽</a>
+            </div>
+         </div>
+         <div class="catalog__card card">
+            <div class="card__body">
+               <a href="product.html" class="card__link">
+                  <div class="card__img">
+                     <img src="img/card/01.jpg" alt="">
+                  </div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__tag">Подвеска</div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__title">Dolce & Gabanna</div>
+               </a>
+               <a href="product.html" class="card__price">175 000 ₽</a>
+            </div>
+         </div>
+         <div class="hr"></div>
+         <div class="catalog__card card">
+            <div class="card__body">
+               <a href="product.html" class="card__link">
+                  <div class="card__img">
+                     <img src="img/card/01.jpg" alt="">
+                  </div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__tag">Подвеска</div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__title">Dolce & Gabanna</div>
+               </a>
+               <a href="product.html" class="card__price">175 000 ₽</a>
+            </div>
+         </div>
+         <div class="catalog__card card">
+            <div class="card__body">
+               <a href="product.html" class="card__link">
+                  <div class="card__img">
+                     <img src="img/card/01.jpg" alt="">
+                  </div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__tag">Подвеска</div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__title">Dolce & Gabanna</div>
+               </a>
+               <a href="product.html" class="card__price">175 000 ₽</a>
+            </div>
+         </div>
+         <div class="catalog__card card">
+            <div class="card__body">
+               <a href="product.html" class="card__link">
+                  <div class="card__img">
+                     <img src="img/card/01.jpg" alt="">
+                  </div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__tag">Подвеска</div>
+               </a>
+               <a href="product.html" class="card__link">
+                  <div class="card__title">Dolce & Gabanna</div>
+               </a>
+               <a href="product.html" class="card__price">175 000 ₽</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <button class="card__btn brn-reset">Показать ещё</button>
+   <div class="card__info">
+      <div class="card__text text-card">
+         <div class="text-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Amet, lorem eu commodo porttitor erat. Amet mauris cursus bibendum in egestas.
+            Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue suspendisse
+            rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id.
+            Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut
+            vitae at ornar sed. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat
+            convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam odit quo harum ut commodi porro
+            repudiandae dolorem perspiciatis tenetur aspernatur tempore, incidunt illum illo qui sequi. Sint cumque
+            nobis ipsam!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam odit quo harum ut commodi porro
+            repudiandae dolorem perspiciatis tenetur aspernatur tempore, incidunt illum illo qui sequi. Sint cumque
+            nobis ipsam!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam odit quo harum ut commodi porro
+            repudiandae dolorem perspiciatis tenetur aspernatur tempore, incidunt illum illo qui sequi. Sint cumque
+            nobis ipsam!
+         </div>
+         <div class="text-card__lable"></div>
+         <button class="text-card__button text-card__button_active btn-reset">Читать полностью</button>
+         <button class="text-card__button text-card__button_disabled btn-reset">Скрыть</button>
+      </div>
+      <div class="card__advantages advantage">
+         <div class="advantage__container">
+            <div class="advantage__img">
+               <img src="img/card/05.png" alt="">
+            </div>
+            <div class="advantage__title">
+               Бесплатная
+               доставка
+            </div>
+         </div>
+         <div class="advantage__container">
+            <div class="advantage__img">
+               <img src="img/card/04.png" alt="">
+            </div>
+            <div class="advantage__title">
+               Индивидуальный
+               дизайн
+            </div>
+         </div>
+         <div class="advantage__container">
+            <div class="advantage__img">
+               <img src="img/card/03.png" alt="">
+            </div>
+            <div class="advantage__title">
+               Бесплатная
+               примерка
+            </div>
+         </div>
+         <div class="advantage__container">
+            <div class="advantage__img">
+               <img src="img/card/02.png" alt="">
+            </div>
+            <div class="advantage__title">
+               Личный
+               подход
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+   <div class="mailing">
+   <div class="mailing__container container">
+      <div class="mailing__title title">Полезные советы и персональный предложения</div>
+      <div class="mailing__subtitle subtitle">Эксклюзивная рассылка</div>
+      <div class="mailing__body">
+         <div class="mailing__list">
+            <ul class="mailing__ul list-reset">
+               <li class="mailing__item">Личный менеджер</li>
+               <li class="mailing__item">Доставка и оформление</li>
+               <li class="mailing__item">Индивидуальный дизайн</li>
+            </ul>
+         </div>
+         <div class="mailing__email">
+            <form action="#" class="mailing__form">
+               <input type="email" name="" id="" placeholder="Ваш e-mail" class="mailing__i1">
+               <input type="submit" class="mailing__i2" value="отправить">
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+   <div class="burger-menu">
+      <div class="burger-menu__container container">
+         <div class="burger-menu__body">
+            <div class="burger-menu__content">
+               <ul class="burger-menu__list list-reset">
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Дизайнерам</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Вакансии</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="contact.html">Контакты</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Вход/Регистрация</a></li>
+               </ul>
+               <hr>
+               <div class="burger-menu__nav">
+                  <div class="burger-menu__font">
+                     <a href="#"><i class="fa-solid fa-user"></i></a>
+                  </div>
+                  <div class="burger-menu__font">
+                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                  </div>
+               </div>
+               <hr>
+               <div class="burger-menu__contacts">
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/YouTube.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/vk.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/Facebook.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/telegram.png" alt="">
+                     </a>
+                  </div>
+                  <div class="burger-menu__contact-item">
+                     <a href="" class="burger-menu__links">
+                        <img src="img/contacts/e.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__body">
+      <div class="footer__items">
+        <div class="footer__title">Полезные ссылки</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Доставка</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Оплата </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">оплата</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_cont">
+              <img src="img/mailing/visa.png" alt="" class="footer__img">
+              <img src="img/mailing/mastercard.png"" alt="" class="footer__img">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">контакты</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_tel">8 (812) 234-56-55</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_tel">8 (812) 234-56-55 </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__link_mail">ojjo@ojjo.ru</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__items">
+        <div class="footer__title">социальные сети</div>
+        <hr>
+        <ul class="footer__ul list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </a>
+          </li>
+          <li class="footer__item footer__item_cont">
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/01.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/02.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/03.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/04.png" alt="" class="footer__img"></a>
+            <a href="" class="footer__link footer__link_img"><img src="img/mailing/05.png" alt="" class="footer__img"></a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="https://kit.fontawesome.com/530ce1ded4.js" crossorigin="anonymous"></script>
+<script>
+
+   function burger() {
+      document.querySelector('.burger-menu').classList.toggle('hide')
+      document.getElementById('burgerButton').classList.toggle('burger--active');
+      document.querySelector('.page__body').classList.toggle('scrollEnable')
+   };
+
+   if (window.NodeList && !NodeList.prototype.forEach) {
+      NodeList.prototype.forEach = function (callback, thisArg) {
+         thisArg = thisArg || window;
+         for (var i = 0; i < this.length; i++) {
+            callback.call(thisArg, this[i], i, this);
+         }
+      };
+   }
+
+   document.querySelectorAll('.filter').forEach(function (selectWrapper) {
+      const selectBtn = selectWrapper.querySelector('.filter__button')
+      const group = selectWrapper.querySelector('.filter__group')
+      const option = group.querySelectorAll('.filter__option')
+      const selectInput = selectWrapper.querySelector('.filter__input')
+
+      selectBtn.addEventListener('click', function (e) {
+         e.stopPropagation();
+         document.querySelectorAll('.filter__group').forEach(function (group) {
+            group.classList.remove('filter__group_visible')
+         })
+         group.classList.toggle('filter__group_visible');
+      });
+      option.forEach(function (option) {
+         option.addEventListener('click', function () {
+            selectBtn.innerText = this.innerText
+            selectInput.value = this.dataset.value
+            group.classList.remove('filter__group_visible')
+         });
+      });
+      document.addEventListener('click', function (e) {
+         if (e.target !== selectBtn) {
+            group.classList.remove('filter__group_visible')
+         }
+      });
+      document.addEventListener('keydown', function (e) {
+         if (e.key === 'Tab' || e.key === 'Escape') {
+            group.classList.remove('filter__group_visible')
+         }
+      })
+   });
+
+   const filter_btn = document.querySelector('.filter__button_btn')
+   const filter_catalog = document.querySelector('.catalog')
+   filter_btn.addEventListener('click', function () {
+      filter_catalog.classList.toggle('catalog_active')
+      filter_btn.classList.toggle('filter__button_btn_active')
+      window.scrollTo({
+         left: 0,
+         top: 0,
+         behavior: 'smooth'
+      })
+      document.getElementById('burgerButton').classList.toggle('hiden')
+      document.querySelector('.page__body').classList.toggle('scrollDisable')
+   })
+
+
+   const textCard = document.querySelector('.text-card');
+   const btnTextCard = document.querySelectorAll('.text-card__button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+         textCard.classList.toggle('text-card_active')
+      });
+   });
+
+</script>
+
+</html>
